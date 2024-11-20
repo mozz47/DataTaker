@@ -1,13 +1,11 @@
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { Link, Stack } from 'expo-router';
-import AntDesign from '@expo/vector-icons/AntDesign';
 
 export default function NotFoundScreen() {
   return (
     <>
-      <Stack.Screen options={{ title: 'Oops! 404 Not Found' }} />
+      <Stack.Screen options={{ title: 'Oops! Not Found' }} />
       <View style={styles.container}>
-      <AntDesign name="frown" size={55} color="#fff"/>
         <Link href="/" style={styles.button}>
           Go back to Home screen!
         </Link>
@@ -19,7 +17,7 @@ export default function NotFoundScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#25292e',
     justifyContent: 'center',
     alignItems: 'center',
   },
