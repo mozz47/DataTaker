@@ -10,7 +10,7 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <Text>Hallo</Text>
       <Link href="/+not-found">Not found Site</Link>
     </View>
   );
