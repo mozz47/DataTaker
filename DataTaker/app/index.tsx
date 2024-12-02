@@ -1,8 +1,7 @@
 import { useRouter } from "expo-router";
-import { Text, View, StyleSheet, Linking } from "react-native";
-import { Link } from 'expo-router';
+import { View, StyleSheet } from "react-native";
 
-import Button from "@/components/Button";
+import PlusButton from "@/components/PlusButton";
 
 export default function Index() {
 
@@ -15,9 +14,12 @@ export default function Index() {
 
   return (
     <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button onPress={onNewTablePress} text="Add new Table"></Button>
-        </View>
+
+      {/* MAIN CONTENT VIEW */}
+      <View style={styles.buttonContainer}>
+        {/* LINK TO VARCHOOSER BUTTON */}
+        <PlusButton onPress={onNewTablePress} />
+      </View>
     </View>
   );
 }
@@ -29,7 +31,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonContainer: {
-    flex: 1 / 3,
+    marginVertical: 30, // Only margin for first button
+    flex: 1,
     alignItems: 'center',
   },
 });

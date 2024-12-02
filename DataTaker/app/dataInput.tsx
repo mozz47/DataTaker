@@ -2,14 +2,27 @@
 import { Text, View, StyleSheet } from "react-native";
 
 import Button from "@/components/Button";
+import DataInputField from "@/components/DataInputField";
+import ParameterSelectionField from "@/components/ParameterSelectionField";
 
 export default function DataInput() {
 
   return (
     <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button onPress={() => console.log("add data")} text="Add new Data"></Button>
-        </View>
+
+      {/* MAIN CONTENT VIEW */}
+      <View style={styles.buttonContainer}>
+        <DataInputField paramName="VarName1"/>
+        <ParameterSelectionField/>
+      </View>
+
+      {/* FOOTER */}
+      <View style={styles.footerContainer}>
+        {/* DONE BUTTON */}
+        <Button buttonWidth={180} onPress={() => {}} text="Done" />
+        {/* NEXT BUTTON */}
+        <Button buttonWidth={260} onPress={() => {}} text="Next" />
+      </View>
     </View>
   );
 }
@@ -21,7 +34,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonContainer: {
-    flex: 1 / 3,
+    marginVertical: 30,
+    flex: 3 / 4,
     alignItems: 'center',
+  },
+  footerContainer: {
+    flex: 1 / 4,
+    flexDirection: 'row',
+    alignItems: 'center',  // horizontal centering
+    justifyContent: 'center',  // vertical centering
+    backgroundColor: '#49515b',  // color
   },
 });

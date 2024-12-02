@@ -1,14 +1,14 @@
 import { Pressable, View, Text, StyleSheet } from 'react-native';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 type Props = {
     onPress: () => void;
-    text?: string
+    text?: string;
+    buttonWidth?: number;
   };
 
-export default function Button( {onPress, text }: Props) {
+export default function Button( {onPress, text, buttonWidth }: Props) {
     return (
-        <View style={styles.buttonContainer}>
+        <View style={[styles.buttonContainer, { width: buttonWidth }]}>
             <Pressable style={styles.button} onPress={onPress}>
                 <Text>{text}</Text>
             </Pressable>
@@ -18,13 +18,16 @@ export default function Button( {onPress, text }: Props) {
 
 const styles = StyleSheet.create({
     buttonContainer: {
-        width: 120,
+        width: 320,
         height: 68,
         marginHorizontal: 20,
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 3,
-        backgroundColor: '#fff',
+        padding: 4, // transparenter Innenring (Dicke)
+        borderWidth: 4,
+        borderColor: '#ffd33d',  // gelber Rand
+        borderRadius: 18,
+        marginVertical: 10,  // Platz um Button (vertikal)
     },
     button: {
         borderRadius: 10,
@@ -32,8 +35,9 @@ const styles = StyleSheet.create({
         height: '100%',
         alignItems: 'center',
         justifyContent: 'center',
+        backgroundColor: '#fff',
     },
-        buttonLabel: {
+    buttonLabel: {
         color: '#fff',
         fontSize: 16,
     },
