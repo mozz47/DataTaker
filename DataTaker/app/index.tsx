@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonContainer: {
-    marginVertical: 30, // Only margin for first button
+    marginVertical: 30,
     flex: 1,
     alignItems: 'center',
   },
