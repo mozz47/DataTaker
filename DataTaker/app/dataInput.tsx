@@ -3,7 +3,6 @@ import { Text, View, StyleSheet } from "react-native";
 
 import Button from "@/components/Button";
 import DataInputField from "@/components/DataInputField";
-import ParameterSelectionField from "@/components/ParameterSelectionField";
 
 export default function DataInput() {
 
@@ -13,7 +12,6 @@ export default function DataInput() {
       {/* MAIN CONTENT VIEW */}
       <View style={styles.buttonContainer}>
         <DataInputField paramName="VarName1"/>
-        <ParameterSelectionField/>
       </View>
 
       {/* FOOTER */}

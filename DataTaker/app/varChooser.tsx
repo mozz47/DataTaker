@@ -3,6 +3,7 @@ import { ScrollView, View, StyleSheet } from "react-native";
 
 import Button from "@/components/Button";
 import PlusButton from "@/components/PlusButton";
+import ParameterSelectionField from "@/components/ParameterSelectionField";
 
 export default function VarChooser() {
 
@@ -20,6 +21,7 @@ export default function VarChooser() {
       <View style={styles.buttonContainer}>
         {/* CREATE NEW FIELD BUTTON */}
         <PlusButton onPress={() => {} }/>
+        <ParameterSelectionField/>
       </View>
 
       {/* FOOTER */}
