@@ -9,19 +9,18 @@ export default function DataInput() {
 
   return (
     <View style={styles.container}>
-
       {/* MAIN CONTENT VIEW */}
+      
       <View style={styles.buttonContainer}>
-        <DataInputField paramName="VarName1"/>
-        <ParameterSelectionField/>
+        <DataInputField paramName="Z.B. Name"/>
       </View>
 
       {/* FOOTER */}
       <View style={styles.footerContainer}>
         {/* DONE BUTTON */}
-        <Button buttonWidth={180} onPress={() => {}} text="Done" />
+        <Button buttonWidth={100} onPress={() => {}} text="Done" />
         {/* NEXT BUTTON */}
-        <Button buttonWidth={260} onPress={() => {}} text="Next" />
+        <Button buttonWidth={200} onPress={() => {}} text="Next" />
       </View>
     </View>
   );
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonContainer: {
-    marginVertical: 30,
+    marginVertical: 20,
     flex: 3 / 4,
     alignItems: 'center',
   },
