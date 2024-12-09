@@ -9,9 +9,13 @@ export default function VarChooser() {
 
   const router = useRouter();
 
+  /**
+   * DONE BUTTON METHOD to link to dataInput and 
+   */
   function onNewTablePress() {
     router.push("/dataInput");
     console.log("Debug: Pushed button to link to data input page.");
+    //TODO: 
   }
 
   return (
