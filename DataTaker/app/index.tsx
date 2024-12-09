@@ -2,6 +2,7 @@ import { useRouter } from "expo-router";
 import { View, StyleSheet } from "react-native";
 
 import PlusButton from "@/components/PlusButton";
+import DBTestButtons from "@/components/DBTestButtons";
 
 export default function Index() {
 
@@ -19,6 +20,8 @@ export default function Index() {
       <View style={styles.buttonContainer}>
         {/* LINK TO VARCHOOSER BUTTON */}
         <PlusButton onPress={onNewTablePress} />
+        {/* TEMPORARY TEST BUTTONS FOR DB */}
+        <DBTestButtons/>
       </View>
     </View>
   );

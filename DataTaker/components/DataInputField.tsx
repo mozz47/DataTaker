@@ -51,13 +51,8 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: '#c7ede4',
         width: "80%",
-<<<<<<< HEAD
-        height: 120,
-        borderRadius: 8,
-=======
         minHeight: 120,
         borderRadius: 16,
->>>>>>> bead118f51ae2ee935ba443a6c52a6fca5be6685
         flexDirection: "column",
         marginVertical: 10,
         alignSelf: 'center',

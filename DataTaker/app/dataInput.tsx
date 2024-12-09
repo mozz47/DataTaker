@@ -11,11 +11,6 @@ export default function DataInput() {
       {/* MAIN CONTENT VIEW */}
       
       <View style={styles.buttonContainer}>
-<<<<<<< HEAD
-        <DataInputField paramName="VarName1"/>
-=======
-        <DataInputField paramName="Z.B. Name"/>
->>>>>>> bead118f51ae2ee935ba443a6c52a6fca5be6685
       </View>
 
       {/* FOOTER */}

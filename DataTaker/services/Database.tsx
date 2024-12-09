@@ -76,5 +76,10 @@ CREATE TABLE IF NOT EXISTS ${tableName} (${columns});
         
         //add to table with sql query
         await db.runAsync(sql, values);
-    }
+    },
+
+    deleteDatabase: async (tableName: string) => {
+        //TODO: warning for deleting database
+        await SQLite.deleteDatabaseAsync(tableName);
+    },
 }
